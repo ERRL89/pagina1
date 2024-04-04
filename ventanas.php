@@ -45,6 +45,11 @@
         </div>
     </div>
 
+    <?php
+        $page="ventanas"; 
+        include "selectMenuFinal.php"; 
+    ?>
+
     <?php require "contactMenu.php"; ?>
     <?php require "footer.php"; ?>
 

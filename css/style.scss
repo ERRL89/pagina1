@@ -7,39 +7,40 @@
 @font-face {
     font-family: Carnales;
     src: url(../fonts/Rumble\ Brave.otf);
-  }
-
+}
 
 body {
     min-height: 100vh;
     width: 100%;
 }
 
-.title-nav{
+.title-nav {
     font-family: Carnales !important;
     font-size: 23px;
 }
 
-.p-custom{
+.p-custom {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
 }
 
-.img-custom{
+.img-custom {
     height: 500px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.548);
     transition: .3s ease-in-out;
-    &:hover{
-        transform:translateY(-3px);
+
+    &:hover {
+        transform: translateY(-3px);
         box-shadow: 5px 5px 15px black;
 
     }
 }
 
-.marca-custom{
+.marca-custom {
     height: 125px;
     transition: .3s ease-in-out;
-    &:hover{
+
+    &:hover {
         transform: translateY(-3px);
     }
 }
@@ -67,13 +68,13 @@ body {
 
 }
 
-.fondoprincipal{
+.fondoprincipal {
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 5px 5px 15px black;
 
-    .fondo_texto{
+    .fondo_texto {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -81,20 +82,8 @@ body {
         width: 60%;
         background-color: black;
         height: 92vh;
-       
-        .multiservicios{
-            position: absolute;
-            top: 29vh;
-            font-family: Carnales;
-            font-weight: 300;
-            font-size: 28px;
-            color: white;
-            z-index: 1000;
-            letter-spacing: 1px;
-            text-shadow: 5px 5px 10px white;
-        }
 
-        .principal_title{
+        .principal_title {
             position: absolute;
             top: 30vh;
             font-family: Carnales;
@@ -105,27 +94,25 @@ body {
             letter-spacing: 3px;
             transition: .3s ease-in-out;
             text-align: center;
-           
+
         }
 
-        h2{
-
+        h2 {
             position: absolute;
-            top: 43vh;
+            top: 46vh;
             font-family: Carnales;
             font-size: 43px;
             color: rgba(37, 140, 203, 1);
             z-index: 1000;
             letter-spacing: 1px;
             transition: .3s ease-in-out;
-
         }
 
         img {
             position: relative;
             width: 100%;
             height: 100%;
-            object-fit: cover; 
+            object-fit: cover;
         }
 
         &::after {
@@ -144,14 +131,14 @@ body {
         position: relative;
         width: 40%;
         height: 92vh;
-    
+
         img {
             position: relative;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-    
+
         .icon_right {
             position: absolute;
             top: 40vh;
@@ -159,12 +146,12 @@ body {
             font-size: 60px;
             color: rgb(37, 140, 203);
             transition: .3s ease-in-out;
-    
+
             &:hover {
                 color: rgb(255, 255, 255);
             }
         }
-    
+
         .icon_left {
             position: absolute;
             top: 40vh;
@@ -172,13 +159,13 @@ body {
             font-size: 60px;
             color: rgb(37, 140, 203);
             transition: .3s ease-in-out;
-    
+
             &:hover {
                 color: rgb(255, 255, 255);
             }
         }
-    
-    
+
+
     }
 }
 
@@ -203,7 +190,7 @@ body {
         align-items: center;
         flex-direction: column;
         gap: 50px;
-       
+
 
         .nosotros {
             position: relative;
@@ -260,7 +247,7 @@ body {
         letter-spacing: 1px;
     }
 
-    .num_categorias{
+    .num_categorias {
         display: none;
         visibility: hidden;
     }
@@ -311,8 +298,8 @@ body {
                 font-size: 17px;
                 font-weight: 400;
                 text-align: center;
-                background: rgb(2,0,36);
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+                background: rgb(2, 0, 36);
+                background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
                 color: rgb(255, 255, 255);
                 transition: .3s;
             }
@@ -549,52 +536,32 @@ body {
             text-align: center;
         }
 
-        .cotiza_ahora2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-top: 15px;
-            gap: 10px;
-            transition: .3s ease-in-out;
+        a {
+            text-decoration: none;
+           
+            .cotiza_ahora2 {
+                padding: 10px 25px;
+                border-radius: 10px;
+                margin-top: 10px;
+                background: rgb(2, 0, 36);
+                background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+                transition: .3s ease-in-out;
 
-            a {
-                text-decoration: none;
-
-                div {
-                    position: relative;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 12px 50px;
-                    background: rgb(2,0,36);
-                    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-                    border-radius: 10px;
-                    text-align: center;
-                    gap: 10px;
-                    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.678);
+                span {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 14px;
+                    color: rgb(255, 255, 255);
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                }
+                &:hover {
                     transition: .3s ease-in-out;
-
-                    img {
-                        height: 30px;
-                        border-radius: 50%;
-                    }
-
-                    span {
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 14px;
-                        color: rgb(255, 255, 255);
-                        font-weight: 600;
-                        letter-spacing: 2px;
-                    }
-
-                    &:hover {
-                        transition: .3s ease-in-out;
-                        background: rgb(2,0,36);
-                        background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, rgba(9, 9, 121, 0.7) 35%, rgba(0,212,255,0.7) 100%);
-                    }
+                    background: rgb(2, 0, 36);
+                    background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, rgba(9, 9, 121, 0.7) 35%, rgba(0, 212, 255, 0.7) 100%);
                 }
             }
+
+            
         }
 
         .datoscontacto2 {
@@ -613,7 +580,7 @@ body {
                 transition: .3s ease-in-out;
 
                 &:hover {
-                    color:rgba(0,212,255,1);
+                    color: rgba(0, 212, 255, 1);
                     transform: translateY(-3px);
                 }
             }
@@ -636,6 +603,7 @@ body {
 
                 a {
                     text-decoration: none;
+
                     span {
                         color: white;
                         font-size: 18px;
@@ -705,13 +673,13 @@ body {
 
 @media screen and (max-width:960px) {
 
-    .fondoprincipal{
+    .fondoprincipal {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-       
-        .fondo_texto{
+
+        .fondo_texto {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -720,8 +688,8 @@ body {
             background-color: black;
             height: 300px;
             z-index: 1000;
-           
-            .multiservicios{
+
+            .multiservicios {
                 position: absolute;
                 top: 20vh;
                 font-weight: 300;
@@ -731,8 +699,8 @@ body {
                 letter-spacing: 1px;
                 text-shadow: 5px 5px 10px white;
             }
-    
-            .principal_title{
+
+            .principal_title {
                 position: absolute;
                 top: 20vh;
                 font-size: 28px;
@@ -741,11 +709,11 @@ body {
                 animation: 5s textShadowTitle linear infinite;
                 letter-spacing: 3px;
                 transition: .3s ease-in-out;
-               
+
             }
-    
-            h2{
-    
+
+            h2 {
+
                 position: absolute;
                 top: 35vh;
                 font-size: 30px;
@@ -753,16 +721,16 @@ body {
                 z-index: 1000;
                 letter-spacing: 1px;
                 transition: .3s ease-in-out;
-    
+
             }
-    
+
             img {
                 position: relative;
                 width: 100%;
                 height: 100%;
-                object-fit: cover; 
+                object-fit: cover;
             }
-    
+
             &::after {
                 content: "";
                 position: absolute;
@@ -774,20 +742,20 @@ body {
                 background-color: rgba(0, 0, 0, 0.8);
             }
         }
-    
+
         .conteiner_imgprincipal {
             position: relative;
             width: 100%;
             height: 375px;
             z-index: 1000;
-        
+
             img {
                 position: relative;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
-        
+
             .icon_right {
                 position: absolute;
                 top: 150px;
@@ -795,7 +763,7 @@ body {
                 font-size: 60px;
                 transition: .3s ease-in-out;
             }
-        
+
             .icon_left {
                 position: absolute;
                 top: 150px;
@@ -803,8 +771,8 @@ body {
                 font-size: 60px;
                 transition: .3s ease-in-out;
             }
-        
-        
+
+
         }
     }
 
@@ -970,7 +938,7 @@ body {
             }
         }
     }
-    
+
     .contacto2 {
         position: fixed;
         bottom: 5px;
@@ -993,7 +961,7 @@ body {
         width: 100%;
         z-index: 1000;
         margin-top: 50px;
-    
+
         .preferencia {
             position: relative;
             display: flex;
@@ -1005,7 +973,7 @@ body {
             gap: 5px;
             padding: 25px;
             border-right: 1px solid rgba(255, 255, 255, 0.425);
-    
+
             .gracias {
                 color: rgb(255, 255, 255);
                 font-size: 21px;
@@ -1014,7 +982,7 @@ body {
                 padding-bottom: 1px;
                 letter-spacing: 1px;
             }
-    
+
             span {
                 color: rgb(255, 255, 255);
                 font-size: 14px;
@@ -1022,7 +990,7 @@ body {
                 font-family: 'Montserrat', sans-serif;
                 text-align: center;
             }
-    
+
             .cotiza_ahora2 {
                 display: flex;
                 justify-content: center;
@@ -1031,29 +999,29 @@ body {
                 margin-top: 15px;
                 gap: 10px;
                 transition: .3s ease-in-out;
-    
+
                 a {
                     text-decoration: none;
-    
+
                     div {
                         position: relative;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         padding: 12px 50px;
-                        background: rgb(2,0,36);
-                        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+                        background: rgb(2, 0, 36);
+                        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
                         border-radius: 10px;
                         text-align: center;
                         gap: 10px;
                         box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.678);
                         transition: .3s ease-in-out;
-    
+
                         img {
                             height: 30px;
                             border-radius: 50%;
                         }
-    
+
                         span {
                             font-family: 'Montserrat', sans-serif;
                             font-size: 14px;
@@ -1061,23 +1029,23 @@ body {
                             font-weight: 600;
                             letter-spacing: 2px;
                         }
-    
+
                         &:hover {
                             transition: .3s ease-in-out;
-                            background: rgb(2,0,36);
-                            background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, rgba(9, 9, 121, 0.7) 35%, rgba(0,212,255,0.7) 100%);
+                            background: rgb(2, 0, 36);
+                            background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, rgba(9, 9, 121, 0.7) 35%, rgba(0, 212, 255, 0.7) 100%);
                         }
                     }
                 }
             }
-    
+
             .datoscontacto2 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 margin-top: 10px;
                 gap: 20px;
-    
+
                 ion-icon {
                     font-size: 28px;
                     color: rgba(37, 140, 203, 1);
@@ -1085,14 +1053,14 @@ body {
                     padding: 7px;
                     border-radius: 50%;
                     transition: .3s ease-in-out;
-    
+
                     &:hover {
-                        color:rgba(0,212,255,1);
+                        color: rgba(0, 212, 255, 1);
                         transform: translateY(-3px);
                     }
                 }
             }
-    
+
             .numeros_telefono {
                 display: flex;
                 justify-content: center;
@@ -1100,21 +1068,22 @@ body {
                 flex-direction: column;
                 gap: 0;
                 margin-top: 0px;
-    
+
                 .datoscontacto2 {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     gap: 0px;
                     margin-top: 0px;
-    
+
                     a {
                         text-decoration: none;
+
                         span {
                             color: white;
                             font-size: 14px;
                             font-family: 'Montserrat';
-    
+
                             &:hover {
                                 color: rgba(37, 140, 203, 1);
                             }
@@ -1122,7 +1091,7 @@ body {
                     }
                 }
             }
-    
+
             .credito {
                 color: rgb(255, 255, 255);
                 font-size: 13px;
@@ -1130,7 +1099,7 @@ body {
                 margin-top: 10px;
             }
         }
-    
+
         .ubicacion {
             position: relative;
             display: flex;
@@ -1141,7 +1110,7 @@ body {
             height: 100%;
             gap: 20px;
             background-image: url(../images/fondo.png);
-    
+
             &::after {
                 content: "";
                 position: absolute;
@@ -1152,7 +1121,7 @@ body {
                 background: rgb(0, 0, 0);
                 backdrop-filter: blur(4px);
             }
-    
+
             iframe {
                 border-radius: 20px;
                 border: 1px solid white;
@@ -1161,18 +1130,18 @@ body {
                 box-shadow: 5px 5px 15px rgb(255, 255, 255);
                 z-index: 1000;
             }
-    
+
             a {
                 list-style-type: none;
                 text-decoration: none;
                 z-index: 1000;
-    
+
                 span {
                     color: rgba(37, 140, 203, 1);
                     font-weight: 400;
                     font-size: 13px;
                     font-family: 'Montserrat';
-    
+
                 }
             }
         }
@@ -1182,14 +1151,14 @@ body {
 
 @media screen and (max-width:480px) {
 
-    .fondoprincipal{
+    .fondoprincipal {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         gap: 25px;
-       
-        .fondo_texto{
+
+        .fondo_texto {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1200,19 +1169,8 @@ body {
             z-index: 0;
             text-align: center;
             box-shadow: 5px 5px 15px black;
-           
-            .multiservicios{
-                position: absolute;
-                top: 20vh;
-                font-weight: 300;
-                font-size: 20px;
-                color: white;
-                z-index: 1000;
-                letter-spacing: 1px;
-                text-shadow: 5px 5px 10px white;
-            }
-    
-            .principal_title{
+
+            .principal_title {
                 position: absolute;
                 top: 35vh;
                 font-size: 50px;
@@ -1222,25 +1180,25 @@ body {
                 animation: 5s textShadowTitle linear infinite;
                 letter-spacing: 1px;
                 transition: .3s ease-in-out;
-               
+
             }
-    
-            h2{
+
+            h2 {
                 position: absolute;
-                top: 42vh;
-                font-size: 30px;
+                top: 45vh;
+                font-size: 29px;
                 z-index: 1000;
                 letter-spacing: 1px;
                 transition: .3s ease-in-out;
             }
-    
+
             img {
                 position: relative;
                 width: 100%;
                 height: 100%;
-                object-fit: cover; 
+                object-fit: cover;
             }
-    
+
             &::after {
                 content: "";
                 position: absolute;
@@ -1252,20 +1210,20 @@ body {
                 background-color: rgba(0, 0, 0, 0.4);
             }
         }
-    
+
         .conteiner_imgprincipal {
             position: relative;
             width: 100%;
             height: 600px;
             z-index: 0;
-        
+
             img {
                 position: relative;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
-        
+
             .icon_right {
                 position: absolute;
                 top: 250px;
@@ -1274,7 +1232,7 @@ body {
                 color: rgb(255, 255, 255);
                 transition: .3s ease-in-out;
             }
-        
+
             .icon_left {
                 position: absolute;
                 top: 250px;
@@ -1455,7 +1413,7 @@ body {
     .contacto2 {
         bottom: 5px;
         z-index: 100;
-        
+
 
         .contenedor {
 
@@ -1503,10 +1461,10 @@ body {
                 }
             }
 
-            .numeros_telefono{
-                .datoscontacto2{
-                    a{
-                        span{
+            .numeros_telefono {
+                .datoscontacto2 {
+                    a {
+                        span {
                             font-size: 17px;
                         }
                     }
