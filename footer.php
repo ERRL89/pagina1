@@ -4,14 +4,12 @@
             <span>Solicite su cotización sin compromiso; estamos a su disposición en nuestra página Web o via Whatsapp
                 si prefiere una atención mas personalizada.<br>Programe una cita ahora mismo !<br><br>Gracias por su
                 preferencia.</span>
-            <div class="cotiza_ahora2">
                 <a href="https://wa.me/5216145294754/?text=Hola, me pudiera proporcionar mas informacion acerca de sus servicios"
-                    target="_blank">
-                    <div>
-                        <span>¡COTIZA AHORA!</span>
-                    </div>
-                </a>
-            </div>
+                    target="_blank"><div class="cotiza_ahora2">
+                
+                    <span>¡COTIZA AHORA!</span>
+                
+            </div></a>
             <div class="datoscontacto2">
                 <a href="https://wa.me/5216145294754" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
                 <a href="https://www.google.com/maps/@28.8373541,-105.9130838,3a,75y,162.71h,72.41t/data=!3m7!1e1!3m5!1s_pPWM9Y8SNS8G6aJqnXogQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D_pPWM9Y8SNS8G6aJqnXogQ%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D58.58691%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656?hl=es&entry=ttu"

@@ -13,6 +13,16 @@ body {
   width: 100%;
 }
 
+.selectMenu{
+  list-style-type: none !important;
+}
+
+.selectMenuCustom:hover{
+    background-color: rgba(128, 177, 250, 0.25) !important;
+}
+
+
+
 .title-nav {
   font-family: Carnales !important;
   font-size: 23px;
@@ -73,17 +83,6 @@ body {
   background-color: black;
   height: 92vh;
 }
-.fondoprincipal .fondo_texto .multiservicios {
-  position: absolute;
-  top: 29vh;
-  font-family: Carnales;
-  font-weight: 300;
-  font-size: 28px;
-  color: white;
-  z-index: 1000;
-  letter-spacing: 1px;
-  text-shadow: 5px 5px 10px white;
-}
 .fondoprincipal .fondo_texto .principal_title {
   position: absolute;
   top: 30vh;
@@ -98,7 +97,7 @@ body {
 }
 .fondoprincipal .fondo_texto h2 {
   position: absolute;
-  top: 43vh;
+  top: 46vh;
   font-family: Carnales;
   font-size: 43px;
   color: rgb(37, 140, 203);
@@ -482,44 +481,25 @@ body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
-.contacto_footer .preferencia .cotiza_ahora2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 15px;
-  gap: 10px;
-  transition: 0.3s ease-in-out;
-}
-.contacto_footer .preferencia .cotiza_ahora2 a {
+.contacto_footer .preferencia a {
   text-decoration: none;
 }
-.contacto_footer .preferencia .cotiza_ahora2 a div {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 50px;
+.contacto_footer .preferencia a .cotiza_ahora2 {
+  padding: 10px 25px;
+  border-radius: 10px;
+  margin-top: 10px;
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
-  border-radius: 10px;
-  text-align: center;
-  gap: 10px;
-  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.678);
   transition: 0.3s ease-in-out;
 }
-.contacto_footer .preferencia .cotiza_ahora2 a div img {
-  height: 30px;
-  border-radius: 50%;
-}
-.contacto_footer .preferencia .cotiza_ahora2 a div span {
+.contacto_footer .preferencia a .cotiza_ahora2 span {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: rgb(255, 255, 255);
   font-weight: 600;
   letter-spacing: 2px;
 }
-.contacto_footer .preferencia .cotiza_ahora2 a div:hover {
+.contacto_footer .preferencia a .cotiza_ahora2:hover {
   transition: 0.3s ease-in-out;
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, rgba(9, 9, 121, 0.7) 35%, rgba(0, 212, 255, 0.7) 100%);
@@ -1052,16 +1032,6 @@ body {
     text-align: center;
     box-shadow: 5px 5px 15px black;
   }
-  .fondoprincipal .fondo_texto .multiservicios {
-    position: absolute;
-    top: 20vh;
-    font-weight: 300;
-    font-size: 20px;
-    color: white;
-    z-index: 1000;
-    letter-spacing: 1px;
-    text-shadow: 5px 5px 10px white;
-  }
   .fondoprincipal .fondo_texto .principal_title {
     position: absolute;
     top: 35vh;
@@ -1075,8 +1045,8 @@ body {
   }
   .fondoprincipal .fondo_texto h2 {
     position: absolute;
-    top: 42vh;
-    font-size: 30px;
+    top: 45vh;
+    font-size: 29px;
     z-index: 1000;
     letter-spacing: 1px;
     transition: 0.3s ease-in-out;
