@@ -21,8 +21,6 @@ body {
     background-color: rgba(128, 177, 250, 0.25) !important;
 }
 
-
-
 .title-nav {
   font-family: Carnales !important;
   font-size: 23px;
@@ -49,6 +47,30 @@ body {
 }
 .marca-custom:hover {
   transform: translateY(-3px);
+}
+
+.btn-cotiza {
+  padding: 10px 50px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  transition: .3s ease-in-out;
+  border: 0px;
+
+  span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+      font-weight: 600;
+      letter-spacing: 1px;
+  }
+}
+
+.btn-cotiza:hover {
+    transition: .3s ease-in-out;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, rgba(9, 9, 121, 0.7) 35%, rgba(0, 212, 255, 0.7) 100%);
 }
 
 @keyframes textShadowTitle {
