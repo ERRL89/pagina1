@@ -66,7 +66,7 @@
             <div class="row mb-3">
                 <div class="col-md-6"><!-- Telefono -->
                   <label for="phone" class="form-label label-custom">Teléfono:</label>
-                  <input type="number" class="form-control sinBotonera" id="telefono" name="phone" placeholder="5512345678" required>
+                  <input type="number" class="form-control sinBotonera" id="telefono" name="telefono" placeholder="5512345678" required>
                   <div class="invalid-feedback">Introduce tu teléfono</div>
                 </div>
                 <div class="col-md-6"><!-- Email -->
@@ -86,12 +86,6 @@
       </form>
     </div>
 
-    <script>
-      function sendForm(){
-        alert("Hola Flaco")
-      }
-    </script>
-
     <?php require "contactMenu.php"; ?>
     <?php require "footer.php"; ?>
     <?php 
@@ -101,5 +95,33 @@
     ?>
 
 </body>
+
+<script>
+			function sendForm(){
+        let nombre = $("#nombre").val()
+        let calle = $("#calle").val()
+        let numero = $("#numero").val()
+        let colonia = $("#colonia").val()
+        let telefono = $("#telefono").val()
+        let email = $("#email").val()
+					$.ajax({
+						url: './sendForm.php',
+						type: 'POST',
+						data: 
+						{
+							nombre:nombre,
+              calle:calle,
+              numero:numero,
+              colonia:colonia,
+              telefono:telefono,
+              email:email,
+						},
+						success: function(result)
+						{
+							$('#formularioContacto').html(result);
+						}
+					});
+      }		
+</script>
 
 </html>

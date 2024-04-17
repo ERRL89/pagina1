@@ -12,9 +12,9 @@
     #
 
     #DATOS PARA PHPMAIL
-    $mailHost = "smtp.gmail.com";
-    $mailUser = "acilpruebas@gmail.com";
-    $mailPass = "gdogzbybgvgnwvsg";
-    $mailSender = array("email" => "acilpruebas@gmail.com", "name" => "Acil Info");
+    $mailHost = "smtp.hostinger.com";
+    $mailUser = "ventas@vidrioyaluminiolosdoscarnales.com";
+    $mailPass = "Erxl5063701489*";
+    $mailSender = array("email" => "ventas@vidrioyaluminiolosdoscarnales.com", "name" => "Vidrio y Aluminio 2 Carnales");
 	
 ?>
