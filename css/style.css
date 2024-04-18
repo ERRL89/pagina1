@@ -13,6 +13,24 @@ body {
   width: 100%;
 }
 
+.btnEmail{
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  transition: .3s ease-in-out;
+}
+
+.btnEmail:hover{
+  transition: .3s ease-in-out;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, rgba(9, 9, 121, 0.7) 35%, rgba(0, 212, 255, 0.7) 100%);
+}
+
 .title-nav {
   font-family: Carnales !important;
   font-size: 23px;
@@ -1287,4 +1305,6 @@ body {
     font-size: 12px;
     margin-bottom: 10px;
   }
+
+ 
 }/*# sourceMappingURL=style.css.map */
