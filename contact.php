@@ -28,60 +28,59 @@
     </div>
 
     <div id="formularioContacto" class="mt-5 mb-5 p-3">
-      <h2 class="text-center">Formulario de Registro</h2>
-      <h6 class="text-center">* Porfavor llene los campos solicitados *</h6>
+      <h2 class="text-center">Formulario de Contacto</h2>
+      <h6 class="text-center">* Nos pondremos en contacto con usted a la brevedad *</h6>
       <form id="form">
-        <!-- Formulario de Contrato -->
-        <div class="container-sm container_form_custom">
-
-          <div class="mb-3 "><!-- Nombre/Numero de Referido -->
-          <div class="row mb-3">
-              <div class="col-md-12"><!-- Nombre -->
-                <label for="nombre" class="form-label label-custom">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+" required>
-                <div class="invalid-feedback">Introduce tu Nombre</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mb-3"><!-- Direccion: Calle - Numero - Colonia -->
-            <label for="direccion" class="form-label label-custom">Dirección:</label>
-            <div class="row mb-3">
-              <div class="col-md-6 mb-2">
-                <input type="text" class="form-control form-input" placeholder="Calle" id="calle" name="calle"  required>
-                <div class="invalid-feedback">Introduce tu calle</div>
-              </div>
-              <div class="col-md-3 mb-2">
-                <input type="text" class="form-control form-input" placeholder="Número" id="numero" name="numero" required>
-                <div class="invalid-feedback">Introduce tu numero</div>
-              </div>
-              <div class="col-md-3 mb-2">
-                <input type="text" class="form-control form-input" placeholder="Colonia" id="colonia" name="colonia" required>
-                <div class="invalid-feedback">Introduce tu colonia</div>
-              </div>
-            </div>
-          </div>
-
-          <div><!-- Telefono/Email -->
-            <div class="row mb-3">
-                <div class="col-md-6"><!-- Telefono -->
-                  <label for="phone" class="form-label label-custom">Teléfono:</label>
-                  <input type="number" class="form-control sinBotonera" id="telefono" name="telefono" placeholder="5512345678" required>
-                  <div class="invalid-feedback">Introduce tu teléfono</div>
+        <div class="container-sm container_form_custom mt-4">
+            <div class="mb-3 ">
+              <!-- Nombre -->
+              <div class="row mb-3">
+                  <div class="col-md-6"><!-- Nombre -->
+                    <label for="nombre" class="form-label label-custom">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+" required>
+                    <div class="invalid-feedback">Introduce tu Nombre</div>
+                  </div>
+                  <div class="col-md-6"><!-- Servicio -->
+                    <label for="producto" class="form-label label-custom">Producto:</label>
+                    <select id="optionProject" class="form-select" aria-label="Default select example">
+                      <option selected disabled>Open this select menu</option>
+                      <option value="puertas">Puertas</option>
+                      <option value="ventanas">Ventanas</option>
+                      <option value="canceles">Canceles</option>
+                      <option value="barandales">Barandales</option>
+                      <option value="proyecto">Proyecto Residencial</option>
+                    </select>
+                    <div class="invalid-feedback">Selecciona el producto de interes.</div>
+                  </div>
                 </div>
-                <div class="col-md-6"><!-- Email -->
-                  <label for="email" class="form-label label-custom">Email:</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@acil.mx" required>
-                  <div class="invalid-feedback">Introduce tu email</div>
+              </div>
+              <!-- Colonia -->
+              <div class="mb-3">
+                <div class="row mb-3">
+
+                  <div class="col-md-3 mb-2">
+                    <label for="colonia" class="form-label label-custom">Colonia:</label>
+                    <input type="text" class="form-control form-input" placeholder="Colonia" id="colonia" name="colonia">
+                    <div class="invalid-feedback">Introduce tu colonia</div>
+                  </div>
+
+                  <div class="col-md-3 mb-2"><!-- Telefono -->
+                      <label for="phone" class="form-label label-custom">Teléfono:</label>
+                      <input type="number" class="form-control sinBotonera" id="telefono" name="telefono" placeholder="5512345678" required>
+                      <div class="invalid-feedback">Introduce tu teléfono</div>
+                  </div>
+
+                  <div class="col-md-6"><!-- Email -->
+                      <label for="email" class="form-label label-custom">Email:</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@gmail.mx" required>
+                      <div class="invalid-feedback">Introduce tu email</div>
+                    </div>
+
                 </div>
+              </div>
+              <!-- Boton de Contratar launchUploadFiles() -->
+              <center><button onclick="sendForm()" type='button' id='btnContinuar' class='btnEmail mt-3'><strong>ENVIAR</strong></button></center> 
             </div>
-          </div>
-
-        <!-- Boton de Contratar launchUploadFiles() -->
-          <div class="container-fluid d-flex justify-content-center align-items-center mt-5">
-                <center><button onclick="sendForm()" type='button' id='btnContinuar' class='btn btn-primary btn-cotiza'><strong>ENVIAR</strong></button></center> 
-          </div>
-
         </div>
       </form>
     </div>
@@ -98,29 +97,33 @@
 
 <script>
 			function sendForm(){
-        let nombre = $("#nombre").val()
-        let calle = $("#calle").val()
-        let numero = $("#numero").val()
-        let colonia = $("#colonia").val()
-        let telefono = $("#telefono").val()
-        let email = $("#email").val()
-					$.ajax({
-						url: './sendForm.php',
-						type: 'POST',
-						data: 
-						{
-							nombre:nombre,
-              calle:calle,
-              numero:numero,
-              colonia:colonia,
-              telefono:telefono,
-              email:email,
-						},
-						success: function(result)
-						{
-							$('#formularioContacto').html(result);
-						}
-					});
+        let form = document.getElementById('form');
+        if(form.checkValidity()) {
+          let nombre = $("#nombre").val()
+          let colonia = $("#colonia").val()
+          let telefono = $("#telefono").val()
+          let email = $("#email").val()
+          let optionProject = $("#optionProject").val()
+         
+            $.ajax({
+              url: './sendForm.php',
+              type: 'POST',
+              data: 
+              {
+                nombre:nombre,
+                colonia:colonia,
+                telefono:telefono,
+                email:email,
+                optionProject:optionProject
+              },
+              success: function(result)
+              {
+                $('#formularioContacto').html(result);
+              }
+            });
+          }else {
+            form.classList.add('was-validated')
+          } 
       }		
 </script>
 
