@@ -43,7 +43,7 @@
                   <div class="col-md-6"><!-- Servicio -->
                     <label for="producto" class="form-label label-custom">Producto:</label>
                     <select id="optionProject" class="form-select" aria-label="Default select example">
-                      <option selected disabled>Open this select menu</option>
+                      <option selected disabled>Servicio de Interés</option>
                       <option value="puertas">Puertas</option>
                       <option value="ventanas">Ventanas</option>
                       <option value="canceles">Canceles</option>
@@ -80,6 +80,7 @@
               </div>
               <!-- Boton de Contratar launchUploadFiles() -->
               <center><button onclick="sendForm()" type='button' id='btnContinuar' class='btnEmail mt-3'><strong>ENVIAR</strong></button></center> 
+              <div id="resultado" class="container"></div>
             </div>
         </div>
       </form>
@@ -118,7 +119,7 @@
               },
               success: function(result)
               {
-                $('#formularioContacto').html(result);
+                $('#resultado').html(result);
               }
             });
           }else {

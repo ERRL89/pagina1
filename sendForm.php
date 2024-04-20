@@ -9,6 +9,8 @@
     $colonia = $_POST["colonia"];
     $telefono = $_POST["telefono"];
     $email = $_POST["email"];
+    $optionProject = $_POST["optionProject"];
+
 
      //CREA ARRAY PARA RECIPIENTS
      $recipients = array();   
@@ -23,14 +25,17 @@
      $mailPath = './templates/email/mail.php';
      $mailData = array(
         array("var_name" => "nombre", "var_val" => "{$nombre}"),
-        array("var_name" => "nombre", "var_val" => "{$nombre}"),
-        array("var_name" => "nombre", "var_val" => "{$nombre}"),
-        array("var_name" => "nombre", "var_val" => "{$nombre}"),
-        array("var_name" => "nombre", "var_val" => "{$nombre}"), 
+        array("var_name" => "colonia", "var_val" => "{$colonia}"),
+        array("var_name" => "telefono", "var_val" => "{$telefono}"),
+        array("var_name" => "email", "var_val" => "{$email}"),
+        array("var_name" => "optionProject", "var_val" => "{$optionProject}"), 
     );
     
  
      ##SE EJECUTA FUNCIÓN
-     sendEmail($recipients, $mailSender, $mailSubject, $mailPath, $mailData, $mailHost, $mailUser, $mailPass);
-
+     sendEmail($recipients, $mailSender, $mailSubject, $mailPath, $mailData, $mailHost, $mailUser, $mailPass);   
 ?>
+
+     <div class="container d-flex justify-content-center align-items-center">
+        <h4>Correo enviado correctamente</h4>
+     </div>
