@@ -14,10 +14,15 @@
 
      //CREA ARRAY PARA RECIPIENTS
      $recipients = array();   
-     $nombreUsuario = "Edson Roberto Rubio Lopez";
-     $emailUsuario =  "ing.edson.rubio@outlook.com";
-     $dataUserMail = array("email" => "{$emailUsuario}", "name" => "{$nombreUsuario}");
-     array_push($recipients, $dataUserMail);
+     $nombreUsuario1 = "Edson Roberto Rubio Lopez";
+     $emailUsuario1 =  "ing.edson.rubio@outlook.com";
+     $nombreUsuario2 = "Erick Gandara";
+     $emailUsuario2 =  "losdoscarnalesvidrios@gmail.com";
+     $dataUserMail1 = array("email" => "{$emailUsuario1}", "name" => "{$nombreUsuario1}");
+     array_push($recipients, $dataUserMail1);
+
+     $dataUserMail2 = array("email" => "{$emailUsuario2}", "name" => "{$nombreUsuario2}");
+     array_push($recipients, $dataUserMail2);
  
      #ENVIO DE CORREO
      //$recipients = array(array("email" => "{$emailDestino}", "name" => "{$nombreDestino}"));
@@ -37,5 +42,5 @@
 ?>
 
      <div class="container d-flex justify-content-center align-items-center">
-        <h4>Correo enviado correctamente</h4>
+        <h5>Correo enviado correctamente</h5>
      </div>

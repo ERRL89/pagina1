@@ -42,7 +42,7 @@
                   </div>
                   <div class="col-md-6"><!-- Servicio -->
                     <label for="producto" class="form-label label-custom">Producto:</label>
-                    <select id="optionProject" class="form-select" aria-label="Default select example">
+                    <select id="optionProject" class="form-select" aria-label="Default select example" required>
                       <option selected disabled>Servicio de Interés</option>
                       <option value="puertas">Puertas</option>
                       <option value="ventanas">Ventanas</option>
@@ -57,10 +57,9 @@
               <!-- Colonia -->
               <div class="mb-3">
                 <div class="row mb-3">
-
                   <div class="col-md-3 mb-2">
                     <label for="colonia" class="form-label label-custom">Colonia:</label>
-                    <input type="text" class="form-control form-input" placeholder="Colonia" id="colonia" name="colonia">
+                    <input type="text" class="form-control form-input" placeholder="Colonia" id="colonia" name="colonia" required>
                     <div class="invalid-feedback">Introduce tu colonia</div>
                   </div>
 
@@ -72,7 +71,7 @@
 
                   <div class="col-md-6"><!-- Email -->
                       <label for="email" class="form-label label-custom">Email:</label>
-                      <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@gmail.mx" required>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@gmail.com" required>
                       <div class="invalid-feedback">Introduce tu email</div>
                     </div>
 
@@ -80,10 +79,21 @@
               </div>
               <!-- Boton de Contratar launchUploadFiles() -->
               <center><button onclick="sendForm()" type='button' id='btnContinuar' class='btnEmail mt-3'><strong>ENVIAR</strong></button></center> 
-              <div id="resultado" class="container"></div>
+              <div id="resultado" class="mt-4 container"></div>
             </div>
         </div>
       </form>
+    </div>
+
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <center> <div class="loader"></div></center>
+                  <center><h2>Enviando...</h2></center>
+              </div>
+          </div>
+      </div>
     </div>
 
     <?php require "contactMenu.php"; ?>
@@ -96,6 +106,7 @@
 
 </body>
 
+<!-- Funcion para enviar formulario -->
 <script>
 			function sendForm(){
         let form = document.getElementById('form');
@@ -105,6 +116,9 @@
           let telefono = $("#telefono").val()
           let email = $("#email").val()
           let optionProject = $("#optionProject").val()
+
+          var modal = new bootstrap.Modal(document.getElementById('exampleModal'));
+          modal.show();
          
             $.ajax({
               url: './sendForm.php',
@@ -120,6 +134,8 @@
               success: function(result)
               {
                 $('#resultado').html(result);
+                modal.hide();
+                $('#btnContinuar').prop('disabled', true);
               }
             });
           }else {
